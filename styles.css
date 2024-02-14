@@ -12,13 +12,15 @@ body{
 .pdf-shape {
   width: 150px;
   height: 100px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
+  border: 3px solid #ceeef7;  
+  border-radius: 20px;
   margin: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 
@@ -83,4 +85,26 @@ body{
   
   .modal-close:hover {
     background-color: #aaa;
+  }
+
+  .row {
+    justify-content:center ;
+    padding: 30px;
+    gap:45px;
+  }
+
+  .pdf-shape:hover {
+    transform: scale(1.1);
+    border: 6px solid #d693f5;  
+  }
+
+
+  .pdf-shape img {
+    width: 120px;
+    height: 86px;
+    object-fit: cover;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
   }
